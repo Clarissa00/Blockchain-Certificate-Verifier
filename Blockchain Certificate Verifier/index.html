@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockchain Certificate Verifier</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Blockchain Certificate Verifier</h1>
+
+    <button id="connectButton">🦊 Connect MetaMask</button>
+    <p id="walletAddress"></p>
+
+    <div class="section">
+      <h2>Issue Certificate (Admin)</h2>
+      <input type="text" id="issueId" placeholder="Certificate ID">
+      <input type="text" id="studentName" placeholder="Student Name">
+      <input type="text" id="course" placeholder="Course Name">
+      <input type="text" id="issueDate" placeholder="Issue Date (DD-MM-YYYY)">
+      <input type="text" id="certHash" placeholder="Certificate Hash (Optional)">
+      <button id="issueBtn">Issue Certificate</button>
+    </div>
+
+    <div class="section">
+      <h2>Verify Certificate</h2>
+      <input type="text" id="verifyId" placeholder="Enter Certificate ID">
+      <button id="verifyBtn">Verify</button>
+      <div id="verifyResult"></div>
+    </div>
+
+    <div class="section">
+      <h2>Revoke Certificate</h2>
+      <input type="text" id="revokeId" placeholder="Certificate ID">
+      <button id="revokeBtn">Revoke Certificate</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
